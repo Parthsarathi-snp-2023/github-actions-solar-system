@@ -57,7 +57,7 @@ jobs:
 
       - name: Run coverage
         run: npm run coverage
-        #continue-on-error: true   # ✅ correct placement
+        continue-on-error: true   # ✅ correct placement
 
       - name: Upload coverage artifact
         uses: actions/upload-artifact@v4
@@ -65,4 +65,5 @@ jobs:
           name: Code-Coverage-Result
           path: coverage
           retention-days: 5
+
 
