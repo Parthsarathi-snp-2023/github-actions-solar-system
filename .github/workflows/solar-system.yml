@@ -99,11 +99,12 @@ jobs:
           with:
             context: .
             push: true
-            tags: ${{ DOCKER_USERNAME }}/githubactionssolarsystem
+            tags: ${{ vars.DOCKER_USERNAME }}/githubactionssolarsystem
             labels: ${{ github.sha }}
             
      
      
+
 
 
 
