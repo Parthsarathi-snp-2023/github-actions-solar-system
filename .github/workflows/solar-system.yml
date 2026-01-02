@@ -73,8 +73,8 @@ jobs:
           with:
             context: .
             #push: true
-            push: false
-            tags: ghcr.io/${{ github.actor }}/githubactionssolarsystem
+            push: true
+            tags: ghcr.io/${{ github.actor }}/githubactionssolarsystem/${{ github.sha }}
             #tags: ghcr.io/parthasarathi/github-actions-solar-system
             labels: ${{ github.sha }}
 
@@ -107,6 +107,7 @@ jobs:
             
      
      
+
 
 
 
