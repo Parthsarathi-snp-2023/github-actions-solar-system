@@ -104,9 +104,17 @@ jobs:
             push: true
             tags: ${{ vars.DOCKER_USERNAME }}/githubactionssolarsystem
             labels: ${{ github.sha }}
-            
+
+        - name: install kubectl on server
+          uses: azure/setup-kubectl@v4
+          with:
+             version: '1.35.0' 
+
+        - name: check kubectl installation and vesion
+          run: kubectl --version
      
      
+
 
 
 
