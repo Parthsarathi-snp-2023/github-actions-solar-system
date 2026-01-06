@@ -111,9 +111,8 @@ jobs:
              version: 'v1.35.0' 
 
         - name: check kubectl installation and vesion
-          run: kubectl --version
-     
-     
+          run: kubectl version --client
+
 
 
 
