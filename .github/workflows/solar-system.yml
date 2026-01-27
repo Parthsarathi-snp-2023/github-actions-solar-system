@@ -148,7 +148,7 @@ jobs:
           with:
             action: deploy
             manifests: |
-              kubernetes/test/*
+              kubernetes/test/
 
         # - name: check config file
         #   run: |
@@ -157,6 +157,7 @@ jobs:
 
         # - name: check connectivity to cluster
         #   run: kubectl get no
+
 
 
 
