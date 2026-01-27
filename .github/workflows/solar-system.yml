@@ -136,7 +136,9 @@ jobs:
 
         - name: check content on rewrite
           run: |
-            cat kubernetes/development/deployment.yaml
+            pwd
+            ls
+            # cat kubernetes/development/deployment.yaml
 
 
 
@@ -147,6 +149,7 @@ jobs:
 
         # - name: check connectivity to cluster
         #   run: kubectl get no
+
 
 
 
