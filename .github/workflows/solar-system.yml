@@ -138,7 +138,7 @@ jobs:
           run: |
             pwd
             ls -la
-            cd kubernetes/development/
+            cd kubernetes/development
             pwd
             ls -la
             # cat kubernetes/development/deployment.yaml
@@ -152,6 +152,7 @@ jobs:
 
         # - name: check connectivity to cluster
         #   run: kubectl get no
+
 
 
 
