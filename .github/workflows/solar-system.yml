@@ -35,6 +35,9 @@ jobs:
     build-image:
       name: build docker image
       runs-on: ubuntu-latest
+
+      environment:
+        name: dev
       
       permissions:
             contents: write
@@ -158,6 +161,7 @@ jobs:
 
         # - name: check connectivity to cluster
         #   run: kubectl get no
+
 
 
 
